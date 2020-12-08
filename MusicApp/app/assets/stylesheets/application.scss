@@ -13,3 +13,39 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url('https://fonts.googleapis.com/css?family=Monoton');
+
+ @import "reset.scss";
+ @import "sessions.scss";
+ @import "users.scss";
+
+ body {
+    background-color: rgb(45, 10, 49);
+    color:  rgb(224, 8, 214);
+    font-size: 30px;
+ }
+
+ .logo{
+     display: flex;
+     justify-content: center;
+     font-family: monoton;
+     font-size: 90px;
+     color: rgb(224, 8, 214);
+ }
+
+ .log { 
+     display: flex;
+     justify-content: flex-end;
+     padding: 20px;
+    }
+     
+
+ .button {
+     background-color: rgb(55, 47, 65);
+ }
+
+ .link{
+     border-radius: 10px;
+     background-color:  rgb(224, 8, 214);
+ }
