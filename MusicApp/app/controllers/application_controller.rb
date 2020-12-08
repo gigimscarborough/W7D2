@@ -2,7 +2,9 @@ class ApplicationController < ActionController::Base
 
     helper_method :current_user, :logged_in?
     def current_user
+        # debugger
        @current_user ||= User.find_by(session_token: session[:session_token])
+
     end
 
     def ensure_logged_in
@@ -10,10 +12,12 @@ class ApplicationController < ActionController::Base
     end
 
     def login!(user)
+        # debugger
         session[:session_token] = user.reset_session_token!
     end
 
     def logged_in?
+        # debugger
         !!current_user
     end
 
