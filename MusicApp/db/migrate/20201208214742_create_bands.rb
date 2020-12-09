@@ -5,6 +5,6 @@ class CreateBands < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
-    add_index :bands, unique: true
+    add_index :bands, :name, unique: true
   end
 end
